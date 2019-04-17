@@ -7,7 +7,7 @@ pipeline {
     stage('MailTest') {
       steps {
         sh 'echo date'
-        mail(subject: 'Test-Mail', body: 'Version : ${env.BuildNumber} ; version1 : ${env.DeployVersion}', to: 'somasekhar.kuruva@riversand.com', cc: 'somasekhar.kuruva@riversand.com')
+        mail(subject: 'Test-Mail', body: 'Version : ${env.BuildNumber} ; version1 : ${env.DeployVersion}', to: 'somasekhar@gmail.com', cc: 'somasekhar@gmail.com')
       }
     }
   }
